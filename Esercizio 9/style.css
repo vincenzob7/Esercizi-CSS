@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", italic;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    margin-top: 4em;
+    gap: 1em;
+}
+
+#first-cat {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#second-cat {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+#third-cat {
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+p {
+    text-align: justify;
+    width: 300px;
+    padding: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+h5 {
+    color: white;
+}
+
+#first-cat,
+#second-cat,
+#third-cat {
+    background: linear-gradient(to top, lightgrey, rgb(160, 157, 157));
+    border-radius: 20px;
+}
+
+.three-dots {
+    position: relative;
+    left: 110px;
+}
+
+.last-three-dots {
+    position: relative;
+    left: 105px;
+}
+
+.icon {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.icon svg {
+    margin-right: 0.5em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        gap: 1em;
+    }
+
+    #first-cat {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    
+    #second-cat {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    
+    #third-cat {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+}
+
+@media  screen and (max-width: 375px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        gap: 1em;
+    }
+
+    #first-cat {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #second-cat {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #third-cat {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+}
