@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#green {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 83px;
+}
+
+#red {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+#blue {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+#orange {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    height: 83px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
